@@ -1,0 +1,351 @@
+@font-face {
+  font-family: Sophia;
+  src: url(fontes/josephsophia.otf)
+}
+
+@font-face {
+  font-family: Blacksword;
+  src: url(fontes/Blacksword.otf);
+}
+
+@font-face {
+  font-family: Birds;
+  src: url(fontes/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf);
+}
+
+@font-face {
+  font-family: LucyRose;
+  src: url(fontes/LucyRosePERSONAL-Regular.otf);
+}
+
+@font-face {
+  font-family: Sterling;
+  src: url(fontes/SerlingGalleria_PERSONAL_USE_ONLY.otf);
+}
+
+
+
+body {
+  background-color: #111;
+  /*background-image: url("site-mãe/background.jpg");*/
+  color: white;
+}
+
+header {
+  background-image: url(../background-logo/background.jpg);
+}
+
+
+header h1 {
+  font-family: LucyRose, serif;
+  background-color: #111;
+  font-size: 3em;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #06bcc1;
+  padding: 25px;
+}
+
+#logo {
+  margin: auto;
+  display: block;
+  padding: 20px;
+  width: 350px;
+}
+
+#barra-pesquisa {
+  background-image: linear-gradient(to bottom, rgb(211, 211, 211), rgb(136, 136, 136));
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 30px;
+}
+
+#botão-pesquisa {
+  background-image: linear-gradient(to bottom, #06bcc1, #097caa);
+  height: 30px;
+  text-align: center;
+  display: flex;
+}
+
+#navbar {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border-bottom: 2px solid #06bcc1;
+}
+
+.nav-link {
+  margin-right: 25px;
+}
+
+footer {
+  width: 100%;
+  color: white;
+}
+
+#footer_content {
+  margin-top: 50px;
+  background-color: #212529;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 3.5rem;
+}
+
+#footer_content h1 {
+  font-size: 2em;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.74rem;
+}
+
+#footer_social_media {
+  display: inline;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media a {
+  margin-right: 25px;
+}
+
+#footer_social_media a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#footer_atendimento h1 {
+  margin-bottom: 0.74rem;
+}
+
+#botão-subir-tela {
+  background-image: linear-gradient(to bottom, #06bcc1, #097caa);
+  background-color: #06bcc1;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  position: fixed;
+  padding: 10px;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.336);
+  border-radius: 8px;
+  transition: .3s;
+}
+
+#botão-subir-tela:hover {
+  background-color: #00000027 !important;
+}
+
+aside#créditos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25px;
+  background-color: #111;
+  color: white;
+  font-size: small;
+  font-weight: 100;
+  padding-top: 3px;
+}
+
+#créditos strong {
+  color: #06bcc1;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
+
+
+/* Slider */
+
+.container-fluid {
+  padding: 0  !important; 
+}
+
+#imagens-carousel {
+  border: 30px #06bcc1;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+  height: 90vh  !important;
+}
+
+#mainSlider .carousel-caption {
+  top: 30%  !important;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px  !important;
+  margin-bottom: 30px  !important;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px  !important;
+  font-weight: 300  !important;
+  margin-bottom: 100px  !important;
+  color: white  !important;
+}
+
+.myimage {
+  width: 100%;
+  height: calc(100vh);
+  object-fit: cover;
+  object-position: center;
+}
+
+#main-btn {
+  background-color: #06bcc1  !important;
+  color: white  !important;
+  text-transform: uppercase  !important;
+  width: 200px  !important;
+  height: 60px  !important;
+  padding: 10px 20px  !important;
+  border-radius: 30px  !important;
+  border: 3px solid transparent  !important;
+  transition: .5s  !important;
+}
+
+.main-btn:hover {
+  text-decoration: none  !important;
+  color: white  !important;
+  background-color: transparent  !important;
+  border-color: #06bcc1  !important;
+}
+
+.carousel-indicators .active {
+  background-color: #06bcc1  !important;
+}
+
+/*Contato*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+#social-platforms h2 {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 3em;
+}
+
+#social-platforms {
+  width: 100%;
+  font-size:1rem;
+  text-align:center;
+  height:280px;
+}
+
+/*Pen code from this point on*/
+.btn {
+  font-size:1.3em;
+  display:inline-block;
+  border-radius:5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin:2px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  overflow:hidden;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,.btn-icon > i {
+  float:left;
+  padding: 13px 18px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em;
+}
+
+.btn > span {
+  padding:14px 18px 16px;
+  color:#FFF;
+  background:#b8b8b8;
+}
+
+
+.btn-icon > i {
+  border-radius:5px 0 0 5px;
+  position: sticky;
+  width:50px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121;
+}
+
+.btn-icon > i:after {
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px;
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i {
+  color:#FFF;
+}
+
+.btn-icon > span {
+  border-radius:0 5px 5px 0;
+}
+
+/*Facebook*/
+.btn-facebook:hover > i,.btn-facebook:focus > i {
+  color:#3b5998;
+}
+
+.btn-facebook > span {
+  background:#3b5998;
+}
+
+/*Whatsapp*/
+.btn-whatsapp:hover > i,.btn-whatsapp:focus > i {
+  color:#31bd31;
+}
+
+.btn-whatsapp > span {
+  background:#31bd31;
+}
+
+/*Pinterest*/
+.btn-pinterest:hover > i,.btn-pinterest:focus > i {
+  color:#cb2028;
+}
+
+.btn-pinterest > span {
+  background:#cb2028;
+}
+
+/*Instagram*/
+.btn-instagram:hover > i,.btn-instagram:focus > i {
+  color:#C13584;
+}
+
+.btn-instagram > span {
+  background:#C13584;
+}
+
+
+
+/*Eventos*/
+
+.eventos-títulos {
+  background-color: #212529;
+  margin-bottom: 0;
+  padding: 8px;
+  margin-top: 40px;
+}
